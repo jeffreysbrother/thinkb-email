@@ -21,20 +21,27 @@
     body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /*prevent from changing declared text sizes*/
 
     /*GENERAL STYLES*/
-    *{font-family: Arial, sans-serif; line-height: 1.2em;}
+    *{font-family: Arial, sans-serif; line-height: 1.5em;}
     #bodyTable {margin: 20px 0;}   /* set top/bottom margin of containing table*/
-    h2 {color: #1D96A7; text-transform: uppercase;}
+    h2 {color: #1D96A7; text-transform: uppercase; padding: 1em 0;}
     /*this fixes the issue of superscipt text affecting line-height*/
     sup { vertical-align: top; font-size: 0.6em; }
+    p, li { font-size: 1.2em; }
+    /*p {padding-bottom: .5em;}*/
 
     /*header section styles*/
 
     /*button styles*/
-    .CTA-button a {color: white; text-decoration: none;}
-    .CTA-button {background-color: #1D96A7;}
+    .CTA-button a {color: white; text-decoration: none; padding: 55px;}
+    .CTA-button {background-color: #1D96A7; height: 50px;}
+    #button1, #button2 {padding: 2em 0;}
 
     /*footer styles*/
     .purple {color: purple;}
+    .footer-link {color: #000;}
+    .bigger {font-size: 2em;}
+    .light {font-weight: normal; padding-top: 0; margin-top: 0;}
+    .npb {padding-bottom: 0; margin-bottom: 0;}
 
     /*shift fonts over to ems for font-sizes and formatting, and rems for modules*/
     html {font-size: 16px;}
@@ -149,6 +156,7 @@
                         <li>Lorem ipsum dolor sit.</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ut sunt in sint officia, id molestias aperiam harum itaque iure magni, ab delectus totam rerum accusantium corrupti, consequatur voluptatem. Deleniti laborum magni sapiente nostrum, doloremque!</li>
                       </ul>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur obcaecati officia neque ex soluta necessitatibus vero quaerat expedita voluptatum repellendus.</p>
                     </td>
                   </tr>
 
@@ -216,7 +224,7 @@
 
                             <tr>
                               <td align="center" valign="middle" id="footer-heading">
-                                <h5 class="footer-text">SHARE THE <span class="purple">THINKABIT FUN</span> WITH FRIENDS &amp; FAMILY</h5>
+                                <h4 class="footer-text">SHARE THE <span class="purple">THINKABIT FUN</span> WITH FRIENDS &amp; FAMILY</h4>
                               </td>
                             </tr>
 
@@ -235,13 +243,13 @@
 
                   <tr>
                     <td align="center" valign="top" id="footer-info" class="padding-class">
-                        <h3>Qualcomm&reg;</h3>
-                        <h3>Thinkabit Lab&trade;</h3>
+                        <h3 class="bigger npb">Qualcomm<sup>&reg;</sup></h3>
+                        <h3 class="bigger purple light">Thinkabit Lab<sup>&trade;</sup></h3>
                         <p>
                           Thinkabit Lab<br />
                           5880 Oberlin Drive<br />
                           San Diego, CA 92121<br />
-                          <a href="www.thinkabitlab.com">www.thinkabitlab.com</a>
+                          <a class="footer-link" href="www.thinkabitlab.com">www.thinkabitlab.com</a>
                         </p>
                     </td>
                   </tr>
